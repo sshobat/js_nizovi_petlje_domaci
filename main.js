@@ -31,6 +31,8 @@ console.log(dataNew);
 
 // Console log result
 
+//SOLUTION
+
 var dataOld = [34, true, "Peter", 1992];
 var dataNew = [];
 
@@ -51,6 +53,8 @@ console.log(dataNew);
 
 // Console log result
 
+//SOLUTION
+
 var dataOld = [34, true, "Peter", 1992];
 var dataNew = [12, "Jack"];
 
@@ -70,6 +74,8 @@ console.log(dataNew);
 // Create a new array that contains data from both arrays, starting with data from array a.
 
 // Console log result
+
+//SOLUTION
 
 var a = [12, 56, 32, 44, 69];
 var b = [88, 7, 13];
@@ -97,6 +103,8 @@ console.log(newArr);
 
 // Console log result
 
+//SOLUTION
+
 var a = [12, 56, 32, 44];
 var b = [88, 7, 13];
 var newArrTaskFive = [];
@@ -121,6 +129,8 @@ console.log(newArrTaskFive);
 // *****
 // ******
 
+//SOLUTION
+
 var stars = '*';
 var star = '*';
 
@@ -140,42 +150,25 @@ for (i = 0; i < 6; i++) {
 // *        *
 // **********
 
-var stars = '';
+//SOLUTION
+
 var star = '*';
+var empty = ' ';
 
 for (i = 0; i < 6; i++) {
-
+    var stars = '';
     for (j = 0; j < 10; j++) {
-        stars += star;
-        console.log(stars);
+        if (i === 0 || i === 5) {
+            stars += star;
+        } else if (j === 0 || j === 9){
+            stars += star; 
+        } else {
+            stars += empty;
+        }
     }
+    console.log(stars);
 }
 
-
-
-
-
-
-
-/*
-var star = '*';
-
-
-for (var i = 0; i < 6 ; i++) {
-var stars = '';
-
-    for(var j = 0; j < 10; j++) {
-
-    if (i === 0 )
-    stars += star;
-    
-    } else {
-    stars
-}
-console.log(stars);
-
-};
-*/
 
 
 
